@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 5: Code Editor</title>
+		<meta charset="utf-8">
+        
+        <style>
+            #controls, #display {
+                float: left;
+            }
+            textarea {
+                width: 400px;
+                height: 250px;
+                display: block;
+                margin-bottom: 10px;
+                font-size: 16px;
+                font-family: monospace;
+            }
+            button {
+                font-size: 18px;
+                width: 120px;
+                padding: 0;
+                
+            }
+            
+            button: nth-of-type {
+                margin: 0 20px;
+            }
+            
+            #display {
+                border: 2px dotted #ccc;
+                width: 600px;
+                height: 518px;
+                margin-left: 20px;
+            }
+            
+            .group:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+        <style id ="styles" ></style>
+        <script>
+            function reset() {
+                //text areas
+                var edits = document.getElementById("html");
+                var css = document.getElementById("css");
+                var display = document.getElementById("display");
+                var style = document.getElementById("style");
+                css.value = null;
+                edits.value = null;
+                display.value = null;
+                style.value = null;
+                display.innerHTML = null;
+                style.innerHTML = null;
+                
+            }
+            function launch() {
+                var edit = doucment.getElementById("html");
+                var display = document.getElementById("display");
+                display.innerHTML = edits.value;
+            }
+                
+            function toggleStyle {
+                var style = document.getElementById("styles");
+                
+                if(!style.innerHTML) {
+                    style.innerHTML = document.getElementById("css").value;     
+                }
+                else
+                    {
+                        style.innerHTML = null;
+                    }
+               
+            }
+            
+            
+            
+        </script>
+	</head>
+	<body>
+		<div id="wrapper" class="group">
+			<div id="controls">
+				<textarea id="css" placeholder="CSS..."></textarea>
+				<textarea id="html" placeholder="HTML..."></textarea>
+				<button type="button" onclick="launch()">Launch</button>
+				<button type="button" onclick="reset()">Clear</button>
+				<button type="button" onclick="toggleStyle()">Toggle</button>
+			</div>
+			<div id="display"></div>
+		</div>
+	</body>
+</html>

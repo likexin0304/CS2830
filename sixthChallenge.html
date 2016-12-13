@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Name: Kexin Li
+     Student ID: 14203175
+     Date: 9/30/2016
+     -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sixth Challenge</title>
+        
+        <script>
+            
+			function getTextarea() {
+				var textareaObject = document.getElementById('comments');
+				
+				console.dir(textareaObject); 
+				
+				
+                
+                console.log(textareaObject.value);
+				
+			}
+
+			function setTextarea() {
+				var textareaObject = document.getElementById('comments');
+				
+				
+				
+				console.dir(textareaObject); 
+                
+                textareaObject.value = "Something new!";
+				
+			}
+			function clearTextarea() {
+				var textareaObject = document.getElementById('comments');
+				
+				
+				
+				console.dir(textareaObject); 
+				
+				textareaObject.value = null;
+                
+			} 
+		</script>
+    </head>
+    
+    
+    <style>
+        #lefttop {
+            
+            width: 500px;
+            height: 500px;
+            box-sizing: border-box;
+        }
+        #leftbottom {
+            width: 500px;
+            height: 500px;
+            box-sizing: border-box;
+        }
+    
+
+    
+    
+    
+    
+    
+    </style>
+    
+    
+    <body>
+        
+        <div>
+        <textarea id="lefttop" placeholder="CSS..."></textarea>
+        </div>
+        
+        <div>
+        <textarea id="leftbottom" placeholder="HTML..."></textarea>
+        </div>  
+        
+        <div>
+        
+        </div>
+    
+        <button type="button" onclick="getTextarea()">Launch</button>
+        <button type="button" onclick="setTextarea()">Toggle</button>
+        <button type="button" onclick="clearTextarea()">Clear</button>
+    </body>
+</html>

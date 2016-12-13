@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<!--
+    Name: KEXIN LI
+    Student ID: 14203175
+    Date: 9/4/16
+--> 
+<head> 
+		<meta charset="UTF-8"> 
+		<title>thirdChallenge</title> 
+    
+        <style>
+            
+            /* h1 and h2 should be center */
+          #header {
+				text-align: center;
+            }
+            /* Wrapper shoud:
+                Be centered on the page (Do not use inline CSS)
+                Have a content width of 1000px
+                Have 2px solid goldenrod border
+                Contains 50px of padding
+                The border radius of 100px
+                And margin of 20px
+            */
+            
+            #columnsWrapper {
+                width: 1000px; 
+				border: 2px solid goldenrod;
+				padding: 50px;
+				border-radius: 100px;
+				margin: 20px auto;
+            }
+            
+            /* three columns should:
+                Padding of 25px
+                Margin of 10px
+                Have a 10px double black border 
+                And Border radius of 50px
+            */
+            
+            .column {
+                padding: 25px;
+				margin: 10px;
+                border: 10px double black;
+                border-radius:  50px;
+            }
+            /*
+                physical width =
+                    250px content
+                    +   50px padding
+                    +   20px margin
+                    +   20px border
+                    =340px
+            */
+            #leftcolumn {
+                width: 250px;
+                float: left;
+                background: forestgreen;
+            }
+            /*
+                physical width =
+                    150px content
+                    +   50px padding
+                    +   20px margin
+                    +   20px border
+                    =240px
+            */
+            #centercolumn {
+                width: 150px;
+                float: left;
+                background: gold;
+            }
+            /*
+                physical width =
+                    1000 content
+                    -   340px
+                    -   240px
+                    -   20px margin
+                    -   20px border
+                    -   50px padding
+                    =   330
+            */  
+            #rightcolumn {
+                width: 330px;
+                float: left;
+                background: tomato;
+            }
+            .group:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+            
+        </style>
+            
+</head>
+
+<body>
+    <div id="columnsWrapper" class="group">
+        <h1 id="header">CS2830 Third Challenge</h1>
+    
+                
+        <div id="leftcolumn"  class="column">What is Lorem Ipsum?<br>Lorem Ipsum is simply dummy text of the printing and typesettinsg industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                
+                
+            <div id="centercolumn"   class="column">Where does it come from?<br>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.</div>
+            
+            <div id="rightcolumn" class="column">Why do we use it?<br>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div>
+    </div>
+    
+    <h2 id="header"> Created by: KEXIN LI</h2>
+</body>
+    
+</html>
+    
+    
+    
+    
+    
